@@ -379,7 +379,156 @@ console.log(`Bem-vindo a minha revisão`)
 //console.log(word.toUpperCase())
 //toUpperCase() is forcing a method in the phrase above
 
-let phrase = "Eu quero viver o Amor!"
-let myArray = phrase.split(" ")
+// Separating strings
+// let phrase = "Eu quero viver o Amor!"
+// let myArray = phrase.split(" ")
+// // Split is removing what's in the " "
+// let phraseWithUnderscore = myArray.join("_")
+// // Join is pushing letters together
+// console.log(phraseWithUnderscore.toLowerCase())
 
-console.log(myArray)
+// Verificating if the phrase includes a especific word.
+//let phrase = "Eu quero viver o Amor!"
+// It's case sensitive, so upper and lower case matters
+//console.log(phrase.includes("Amor")) // Answers in boolean
+
+// Creating arrays with constructor
+//let myArray = ['a', 'b', 'c'] -> Commom array
+
+//let myArray = new Array('a', 'b', 'c')
+//console.log(myArray)
+
+//console.log(["a",
+// {type: "array"},
+// function() { return "alo"}
+//][2]())
+// [2] is selecting the argument of the array and () is running the function
+
+//let word = "manipulação"
+//console.log(Array.from(word)) // This function is transforming a text to elements of an array
+
+/*
+let techs = ["html", "css", "js"]
+
+// Add an item on the end
+techs.push("nodejs")
+// Add on the begining
+techs.unshift("sql")
+// Remove from the end
+// techs.pop()
+// Remove from the begining
+// techs.shift()
+// Take only a few elements of the array
+//console.log(techs.slice(1, 4))
+// Remove 1 or more itens in any position of the array
+//techs.splice(1, 2)
+// Find the position of a element in array / This structure will remove any item of the array
+let index = techs.indexOf('html')
+techs.splice(index, 1)
+console.log(techs)
+*/
+
+// new / Function
+//let name = new String('Guilherme')
+//name.surName = "Teixeira"
+//let age = new Number(20)
+//let date = new Date('2020-12-01')
+//console.log(name, age, date)
+
+// typeof and delete
+//const person = {
+//    name: 'Guilherme',
+//    age: 20
+//}
+//delete person.age // delete erases a property inside person
+//console.log(person)
+
+// Logical operators
+
+// - 2 boolean values, that when verified results in a true or false
+//let pao = true
+//let queijo = true
+
+// AND &&
+//console.log(pao && queijo)
+
+// OR ||
+//console.log(pao || queijo)
+
+// NOT ! / This command denies the original value, if it's true it'll become false
+//console.log(!queijo)
+
+
+// Operator precedence
+// De cima para baixo, do mais importante ao menos importante.
+/*
+* grouping                      ( )
+* negação e incremento          ! ++ --
+* multiplicação e divisão       * /
+* adição e subtração            + -
+* relacional                    < <= > >=
+* igualdade                     == != === !==
+* AND                           && 
+* OR                            ||
+* condicional                   ?:
+* assignment (atribuição)       = += -= *= %=
+*/
+// console.log( 3 > 2 && 2 > 1 )
+
+// if and else / Can put the condition inside else ()
+// let temperature = 39
+// let highTemperature = temperature >= 37.5
+// let mediumTemperature = temperature < 37.5 && temperature >= 37
+
+// if(highTemperature) {
+//     console.log('Febre alta')
+// } else if(mediumTemperature) {
+//     console.log('Febre moderada')
+// } else {
+//     console.log('Saudável')
+// }
+
+// switch
+// let expression = 'r'
+// switch(expression) {
+//     case 'a':
+//         console.log('a')
+//         break;  // Needs break to stop the code running
+//     case 'b':
+//         console.log('b')
+//         break;
+//     default:
+//         break}
+
+// Throw and try catch
+
+// function sayMyName(name = ''){
+//     if (name === ''){
+//         //throw new Error ("Nome é obrigatório")
+//         throw 'Nome é obrigatório'
+//     }
+//     console.log(name)
+// }try{
+//         sayMyName('') // Giving the name a new assignement
+// } catch(e){
+//         console.log(e)} console.log ('Após o try catch.')
+
+//      Repeating structure
+// For
+//for(let i = 10; i > 0; i--){
+//    if( i === 5){
+//        continue; // it jumps the number 5, if use break it'll stop when reach 5
+//    } console.log(i)}
+// While
+//let i = 0
+//while(i < 10) {
+//    console.log(i)
+//    i++;}
+// For of
+let name = 'Mayk'
+let names = ['Joao', 'Paulo', 'Pedro']
+
+//for (let char of name) {
+//    console.log(char)}
+for (let name of names) {
+console.log(name)}
