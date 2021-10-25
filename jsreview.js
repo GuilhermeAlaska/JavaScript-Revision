@@ -524,11 +524,24 @@ console.log(techs)
 //while(i < 10) {
 //    console.log(i)
 //    i++;}
-// For of
-let name = 'Mayk'
-let names = ['Joao', 'Paulo', 'Pedro']
 
-//for (let char of name) {
+// For of
+//let name = 'Mayk'
+//let names = ['Joao', 'Paulo', 'Pedro']
+
+//for (let char of name) { - It'll take each caracter of the string and turn it in an array
 //    console.log(char)}
-for (let name of names) {
-console.log(name)}
+//for (let name of names) {
+//console.log(name)}
+//console.log(names)
+
+// For in
+// let person = {
+//     name: 'John',
+//     age: 30,
+//     weight: 88.6
+// }
+// for(let property in person){
+//     console.log(property)
+//     console.log(person[property])
+// }
